@@ -4,5 +4,53 @@ title: Index page
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
-	
+<div class="wrap">
+	<!-- begin header -->
+	<header class="header">
+		<div class="container">
+			<div class="logo"><img src="img/logo.png" alt=""/></div>
+			<nav class="menu">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Become an Affiliate</a></li>
+				</ul>
+			</nav>
+			<a href="#" class="call">
+				<div class="call__img">
+					{{mixins.icon('phone')}}
+				</div>
+				<div class="call__phone">
+					<div class="call__text">Let's talk:</div>
+					<div class="call__number">(866)-501-1144</div>
+				</div>
+			</a>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- begin hero -->
+	<section class="hero" style="background: #e3e3e3 url(img/bg.jpg) 50% 100% no-repeat;">
+		<div class="container">
+			<div class="hero__title">HIRE BETTER PEOPLE FASTER AT 1/3 OF THE COST</div>
+			<div class="hero__btns">
+				<a href="#" class="btn">
+					<div class="btn__img">
+						{{mixins.icon('rocket')}}
+					</div>
+					<div class="btn__text">Get started now</div>
+				</a>
+				<div class="hero__or">or</div>
+				<a href="#" class="btn btn-right">
+					<div class="btn__img">
+						{{mixins.icon('play')}}
+					</div>
+					<div class="btn__text">Watch how we do it</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!-- end hero -->
+</div>
 {% endblock %}
