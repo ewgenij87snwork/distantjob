@@ -92,34 +92,60 @@
 .menu
 	li
 		a
+			position: relative
 			transition: all 1s ease-in-out
-			svg
-				position: absolute
-				left: 0
-				top: 0
-				margin: 15px
-				// transform: translate(-50% 0)
-				height: 25px
-				width: 110%
-				
+			display: flex
+			flex-direction: column
+			margin: 0 20px
 				
 				/* Swiggle Box */
+		
 			svg
+				
+				border: 3px solid teal
+				// position: relative
+				position: absolute
+				padding: -8px
+				left: 0
+				top: 0
+				// margin: 15px
+				// transform: translate(-50% 0)
+				height: 25px
+				box-sizing: border-box
+				width: 100%
+				height: 100%
+				background: transparent 
 				path
-				stroke-dasharray: 265, 0
-				transition: all 1s ease-in-out
-				stroke: #4274D3
-				fill: none;
-				stroke-width: 1;
+					width: 100%
+					height: 100%
+					position: relative
+					stroke-dasharray: 265, 0
+					transition: all 1s ease-in-out
+					stroke: #4274D3
+					fill: transparent
+					stroke-width: 1;
+					margin: 0 20px
+					padding: 0 -5px 
+					top: 0
+					left: -50%
 			
 			&:hover svg path
 				stroke-width: 3
 				stroke-dasharray: 0, 350
 				stroke-dashoffset: 20
 				-transition: all 1s ease-in-out
-
+.menu__text
+	position: relative
+	margin: 5px
+	padding: 5px
+	font-size: 30px
+	
+.obvodka
+	
+	
 ////////////////////////////////////////////////////////////////////////////////////////
 // Animation CALL
+////////////////////////////////////////////////////////////////////////////////////////
 .call
 	// background: none
 	&__img
