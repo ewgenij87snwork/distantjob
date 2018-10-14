@@ -118,8 +118,41 @@
 				stroke-dashoffset: 20
 				-transition: all 1s ease-in-out
 
+////////////////////////////////////////////////////////////////////////////////////////
+// Animation CALL
+////////////////////////////////////////////////////////////////////////////////////////
+.call
+	// background: none
+	&__img
+		// background: none 
+		
+		.icon
+			animation: bouncing 0.5s cubic-bezier(.951,.125,.61,.1) .6s infinite alternate both
+			border-radius: 50%
+			padding: .2em 
+			// box-shadow: none
+			// fill: #fff
+			// background: 
+			// position: relative
+			// border-radius: 2px
+			display: inline-block
+			// color: white
+			// cursor: pointer
+			// font-size: 0.75rem
+			// font-weight: 300
+			// letter-spacing: 0.2em
+			// padding: 1em 2em 1.1em
+			position: relative
+			// text-decoration: none
+			// text-transform: uppercase
+			// vertical-align: top
+			// margin-top: 50px
 
-
+@keyframes bouncing
+	0% 
+  		bottom: 0; box-shadow: 0 0 5px rgba(0,0,0,0.5)
+	100%
+		bottom: 50px; box-shadow: 0 50px 50px rgba(0,0,0,0.1)
 
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
@@ -196,7 +229,9 @@
 	background: #fff
 	margin: 125px auto
 	
-	.ramka
+
+	
+	.ramka, .ramka-left
 		position: absolute
 		top: 0
 		left: 0
@@ -214,12 +249,14 @@
 		rect
 			stroke-dasharray: 400, 0
 			transition: all .8s ease-in-out
-		&:hover
-			stroke: #4274D3 
+		// &:hover
+		// 	stroke: #4274D3
+
 	&:hover
 		background: #4274D3 
 		transition: all .8s ease-in-out
 		box-shadow: 0 0 20px #000
+		
 		.ramka
 
 			rect
@@ -227,7 +264,13 @@
 				stroke-dasharray: 35, 245
 				stroke-dashoffset: 38
 				transition: all .8s ease-in-out
-				
+
+.ramka-left
+	&:hover
+		stroke: #fff
+.ramka-right
+	&:hover
+		stroke: #4274D3
 
 .btn
 	&__text
