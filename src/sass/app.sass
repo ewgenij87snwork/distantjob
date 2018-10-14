@@ -58,11 +58,16 @@
 	li
 		display: inline-block
 		a
+			display: block
 			font-size: 12px
 			font-weight: bold 
+			line-height: 20px
+			position: relative
 			color: #282F37 
+			margin: 15px
 			margin-left: 20px
 			text-decoration: none
+
 
 .call
 	&__text
@@ -81,6 +86,41 @@
 			position: absolute
 			left: -15px
 			top: 0
+////////////////////////////////////////////////////////////////////////////////////////
+// Animation MENU
+////////////////////////////////////////////////////////////////////////////////////////
+.menu
+	li
+		a
+			transition: all 1s ease-in-out
+			svg
+				position: absolute
+				left: 0
+				top: 0
+				margin: 15px
+				// transform: translate(-50% 0)
+				height: 25px
+				width: 110%
+				
+				
+				/* Swiggle Box */
+			svg
+				path
+				stroke-dasharray: 265, 0
+				transition: all 1s ease-in-out
+				stroke: #4274D3
+				fill: none;
+				stroke-width: 1;
+			
+			&:hover svg path
+				stroke-width: 3
+				stroke-dasharray: 0, 350
+				stroke-dashoffset: 20
+				-transition: all 1s ease-in-out
+
+
+
+
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 ////////////////	HERO    //////////////////////////////////////////
@@ -110,10 +150,12 @@
 		color: #666666
 		font-weight: bold
 		font-size: 18px  
-
-.btn
+.basicBox
 	width: 45%
 	line-height: 1
+.btn
+	// width: 45%
+	// line-height: 1 ---if we don't have .basicBox
 	&__text
 		font-size: 22px
 		font-weight: bold 
@@ -138,4 +180,19 @@
 		fill: #666666
 	.btn__img:after
 		background: #666666
-	
+		
+////////////////////////////////////////////////////////////////////////////////////////
+// Animation BUTTON HERO
+////////////////////////////////////////////////////////////////////////////////////////
+
+.btn
+	&__text
+		margin-left: 10px 
+	&__img
+		position: relative
+		.icon
+			font-size: 30px
+	.rocket
+		.icon		
+		
+		
