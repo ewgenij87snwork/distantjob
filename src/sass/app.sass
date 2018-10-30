@@ -49,29 +49,34 @@
 
 .header
 	margin: 15px 20px
+	background: linear-gradient(rgba(0, 0, 0, .1) 5%, transparent 15%, transparent 90%, rgba(0, 0, 0, .1) 100%) 
+	border-radius: 20px
+	 
 	.container
 		max-width: 100vw
 		display: flex
 		align-items: center
 		justify-content: space-between
-
-
+		
+.logo
+	margin-left: 5px
 .menu
 	flex: 2
 	margin: 0 40px
-	
+	max-width: 600px
 	li
 		display: inline-block
+		padding: 5px
 		a
 			font-size: 12px
 			font-weight: bold 
 			// line-height: 20px
 			position: relative
 			color: #fff 
-			margin: 15px
+			margin: 5px
 			// margin-left: 20px
 			text-decoration: none
-
+			
 
 .call
 	flex: 1
@@ -97,7 +102,7 @@
 .menu
 	// border: 5px solid teal
 	padding: 0
-	margin: 0
+	margin: 0 50px	
 	position: relative
 	transition: all .6s ease-in-out
 	// display: flex
@@ -105,29 +110,29 @@
 	ul
 		display: flex
 		justify-content: space-around
-		margin-right: 40px
-		margin-left: 40px
+		// margin-right: 40px
+		// margin-left: 40px
 		// align-items: start
 		// align-items: flex-start
 		// width: 50%
-		
+		// background: linear-gradient(rgba(0, 0, 0, .1) 5%,  rgba(0,204,0,.8) 10%, transparent 25%, transparent 65%, rgba(0,204,0,.8) 90%, rgba(0, 0, 0, .1) 100%) 
 		
 		li
 			&:hover
-				background: linear-gradient(rgba(0, 0, 0, .1) 5%,  rgba(0,204,0,.8) 10%, transparent 35%, transparent 65%, rgba(0,204,0,.8) 90%, rgba(0, 0, 0, .1) 100%) 
 			a
 				background: rgba(77, 93, 132, .9)
-				padding: 1px
+				padding: 10px
 				color: #000F 
 				line-height: 2
+				border-radius: 3px
 				
 			a:hover
-				animation: bouncing .5s cubic-bezier(.651,.125,.61,.1) .21s infinite alternate both
+				animation: bouncing .35s cubic-bezier(.651,.125,.61,.1) .21s infinite alternate both
 				transition: all .4s ease-in-out
 				margin-top: 100px 
 				
 				.menu__text
-					color: #000
+					// color: #000
 				svg
 					path
 						// fill: rgba(0, 0, 0, .3)
@@ -138,29 +143,31 @@
 	position: relative
 	display: inline-block
 	padding: 5px
-	background: linear-gradient(rgba(0, 0, 0, .1) 5%, transparent 15%, transparent 90%, rgba(0, 0, 0, .1) 100%) 
-.menu svg
-	position: absolute
-	top: 50%
-	left: 0%
-	margin-top: 0
-	margin-bottom: 0
-	margin-left: 0
-	margin-right: 0
-	height: 30px
-	opacity: 1
-	transition: all .6s ease-in-out
-	path
-		fill: none
-		transition: all .6s ease-in-out
-		position: absolute
+	
+
+	
+// .menu svg
+// 	position: absolute
+// 	top: 50%
+// 	left: 0%
+// 	margin-top: 0
+// 	margin-bottom: 0
+// 	margin-left: 0
+// 	margin-right: 0
+// 	height: 30px
+// 	opacity: 1
+// 	transition: all .6s ease-in-out
+// 	path
+// 		fill: none
+// 		transition: all .6s ease-in-out
+// 		position: absolute
 					 
 ////////////////////////////////////////////////////////////////////////////////////////
 // Animation CALL
 ////////////////////////////////////////////////////////////////////////////////////////
 .call
 	// background: none
-	width: 30%
+	max-width: 250px
 	&__img
 		// background: none 
 		
