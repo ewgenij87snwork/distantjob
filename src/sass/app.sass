@@ -57,13 +57,40 @@
 		display: flex
 		align-items: center
 		justify-content: space-between
+		position: relative
+		+r(900) 
+			flex-direction: column
+			margin-right: 0
+		
 		
 .logo
 	margin-left: 5px
+	+r(900) 
+		align-self: center
+		transform: translate(-100%, 0)
+		position: absolute
+		bottom: 0
+	+r(650) 
+		position: relative 
+		margin-top: 10px
+		transform: translate(0, 0)
+		
+	
 .menu
+	// 900px - menu - down + w100vw or 100%
 	flex: 2
 	margin: 0 40px
 	max-width: 600px
+	+r(900) 
+		width: 100%
+		margin-bottom: 20px
+	ul
+		+r(650) 
+			display: flex
+			flex-direction: column
+			align-items: center
+	
+	
 	li
 		display: inline-block
 		padding: 5px
@@ -76,10 +103,19 @@
 			margin: 5px
 			// margin-left: 20px
 			text-decoration: none
+			+r(650) 
+				min-width: 500px
+				
 			
 
 .call
-	flex: 1
+	
+	+r(900) 
+		align-self: center
+		transform: translate(15vw, 0)
+	+r(650) 
+		transform: translate(0, 0)
+	
 	&__text
 		text-align: right
 	&__number
@@ -102,7 +138,7 @@
 .menu
 	// border: 5px solid teal
 	padding: 0
-	margin: 0 50px	
+	margin: 0 10px	
 	position: relative
 	transition: all .6s ease-in-out
 	// display: flex
@@ -118,14 +154,15 @@
 		// background: linear-gradient(rgba(0, 0, 0, .1) 5%,  rgba(0,204,0,.8) 10%, transparent 25%, transparent 65%, rgba(0,204,0,.8) 90%, rgba(0, 0, 0, .1) 100%) 
 		
 		li
-			&:hover
+			// &:hover
 			a
 				background: rgba(77, 93, 132, .9)
 				padding: 10px
 				color: #000F 
 				line-height: 2
 				border-radius: 3px
-				
+				box-shadow: 0 0 40px rgba(0,204,0,.4)
+
 			a:hover
 				animation: bouncing .35s cubic-bezier(.651,.125,.61,.1) .21s infinite alternate both
 				transition: all .4s ease-in-out
@@ -143,7 +180,11 @@
 	position: relative
 	display: inline-block
 	padding: 5px
-	
+	+r(650) 
+		width: 200px
+		font-size: 1.3rem
+		text-align: center
+		
 
 	
 // .menu svg
@@ -229,6 +270,11 @@
 		line-height: 1.4
 		margin-bottom: 40px
 		font-weight: bold 
+		padding: 10px
+		+r(700) 
+			font-size: 3em
+			margin-bottom: 20px
+		
 	&__btns
 		display: flex
 		flex-direction: row
@@ -236,12 +282,26 @@
 		align-items: center
 		width: 100%
 		position: relative
+		+r(650) 
+			flex-direction: column
+			align-items: start
+			margin-bottom: 50px
+		
 	&__or
-		color: #666666
+		color: rgba(0,0,0, .75)
+		text-transform: uppercase
 		font-weight: bold
-		font-size: 18px  
+		font-size: 2em 
+		+r(650) 
+			text-align: center
+			width: 100%
+			margin: 15px auto
+		
 
 .btn
+	+r(650) 
+		align-self: start
+	
 	// width: 45%
 	// line-height: 1 ---if we don't have .basicBox
 	&__text
@@ -285,7 +345,8 @@
 	position: relative
 	background: #fff
 	margin: 125px auto
-	
+	+r(650) 
+		margin: 0 auto	
 
 	
 	.ramka, .ramka-left
