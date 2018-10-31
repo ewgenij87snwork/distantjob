@@ -255,6 +255,17 @@
 		width: 100%
 		position: relative
 		background: teal
+	+r(650) 
+		&:before
+			content: '' 
+			position: absolute
+			bottom: 0
+			top: 0
+			height: 100%
+			width: 100%
+			background: rgba(0,0,0, .8) 
+			
+	
 			
 	.container
 		max-width: 700px
@@ -271,6 +282,7 @@
 		margin-bottom: 40px
 		font-weight: bold 
 		padding: 10px
+
 		+r(700) 
 			font-size: 3em
 			margin-bottom: 20px
@@ -340,13 +352,14 @@
 	position: relative
 	
 .basicBox
-	width: 45%
+	// width: 45%
 	line-height: 1
 	position: relative
 	background: #fff
 	margin: 125px auto
 	+r(650) 
-		margin: 0 auto	
+		margin: 0 auto
+			
 
 	
 	.ramka, .ramka-left
