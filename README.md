@@ -4,4 +4,5 @@ Transparent Background (.8) in .hero was upper .hero__title. Text .hero__title w
 	So, must be 
 		.hero__title {position: relative;}
 		
-		
+
+&:hover => &:hover,&:active
