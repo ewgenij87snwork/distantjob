@@ -201,7 +201,7 @@
 	&__title
 		text-align: center
 		font-size: 45px
-		color: #fff
+		color: #282827
 		line-height: 1.4
 		margin-bottom: 40px
 		font-weight: bold 
@@ -209,7 +209,9 @@
 		position: relative
 		+r(700) 
 			font-size: 3em
-			margin-bottom: 20px		
+			margin-bottom: 20px	
+		+r(650)
+			color: #FFF 	
 	&__btns
 		display: flex
 		flex-direction: row
@@ -220,6 +222,7 @@
 		+r(650) 
 			flex-direction: column
 			align-items: start
+
 	&__or
 		color: rgba(0,0,0, .75)
 		text-transform: uppercase
@@ -229,6 +232,8 @@
 			text-align: center
 			width: 100%
 			margin: 15px auto
+			color: #FFF 
+			opacity: .7
 		
 ////////////////////////////////////////////////////////////////////////////////////////
 //  BUTTON HERO
@@ -264,7 +269,6 @@
 	border-radius: 0
 	background: rgba(0, 204, 00, .8)
 	&:hover
-		// background: #4274D3 
 		box-shadow: 0 0 3px #000
 .btn-right
 	background: #fff
