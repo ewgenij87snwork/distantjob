@@ -4,5 +4,8 @@ Transparent Background (.8) in .hero was upper .hero__title. Text .hero__title w
 	So, must be 
 		.hero__title {position: relative;}
 		
+In webpack must change: 
+		1. Set "destpath="
+		2. Index.yaml => inside just page.html
 
-&:hover => &:hover,&:active
+&:hover => &:hover,&:active	
